@@ -1,0 +1,33 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+      },
+   "description": "Solve Captchas Automatic Captcha Solving Extension For Google Chrome",
+   "icons": {
+      "128": "images/icons/128.png",
+      "16": "images/icons/16.png"
+   },
+   
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/rumola.css" ],
+      "js": [ "libs/jquery-2.1.4.js", "js/google.js", "js/independent_functions.js", "js/full_process_page.js", "js/wait_box.js", "js/rumola_form_ready_input.js", "js/rumola_form_ready_image.js", "js/rumola.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ], 
+      
+   "manifest_version": 2,
+   "minimum_chrome_version": "42.0.2311.135",
+   "name": "Solve Captchas - Captcha Solver Extension",
+   "short_name": "Solve Captchas",
+   "options_page": "forms/options.html",
+   "browser_action": {
+      "default_icon": "images/icons/32.png",
+      "default_popup": "forms/popup.html",
+      "default_title": "Solve Captchas"
+   },
+   "permissions": [ "contextMenus", "storage", "notifications", "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.8",
+   "web_accessible_resources": [ "images/*" ]
+}

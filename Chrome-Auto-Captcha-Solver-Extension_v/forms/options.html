@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/options.css" />
+<link href="http://www.captchas.xyz/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../libs/jquery-ui-1.11.4.css" />
+<title>Captcha Solutions Extension Options</title>
+<style>
+.settings-container {
+    border: thin solid black;
+    -webkit-border-radius: 5px;
+    margin: 25px;
+    padding: 7px;
+    width: 45%;
+    min-width: 300px;
+}
+
+.settings-container > span {
+    display: -webkit-box;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: -22px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="margin-top: 20px; margin-bottom: 20px; margin-left: 2px;">
+			<a href="https://www.captchasolutions.com/" target="_new"><img src="https://www.captchasolutions.com/img/captchasolutions.png"></a>
+		</div>
+		<div class="alert alert-warning">
+			<strong>Note!</strong> If you don't have Captcha Solutions API Key
+			and Secret Key you can register <a
+				href="https://www.captchasolutions.com/clients/register/" target="_blank">on this
+				page</a> (<a
+				href="https://www.captchasolutions.com/clients/register/" target="_blank">https://www.captchasolutions.com/clients/register/</a>).
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<input id="api-key" type="text" class="form-control"
+					placeholder="API KEY" />
+			</div>
+			<div class="col-md-4">
+				<input id="secret-key" type="text" class="form-control"
+					placeholder="SECRET KEY" />
+			</div>
+			<div class="col-md-3">
+				<button type="button" id="save-btn" class="btn btn-success btn-sm">
+					<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+					SAVE KEYS
+				</button>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 20px; margin-bottom: 20px; margin-left: 2px;">
+			<p style="font-weight: 900;">Top-up your captcha solving tokens for just $0.7 per 1000. <a
+				href="https://www.captchasolutions.com/pricing/" target="_blank">Click here</a> (<a
+				href="https://www.captchasolutions.com/pricing/" target="_blank">https://www.captchasolutions.com/pricing/</a>)</p>
+		</div>
+	</div>
+	<script src="../libs/jquery-2.1.4.js"></script>
+	<script src="../libs/jquery-ui-1.11.4.js"></script>
+	<script src="../js/options.js"></script>
+</body>
+</html>

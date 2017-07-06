@@ -1,0 +1,33 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+      },
+   "description": "Chrome Auto Captcha Solver and Bypass + 'I'm not a robot!' Auto Clicker Extension",
+   "icons": {
+      "128": "images/icons/128.png",
+      "16": "images/icons/16.png"
+   },
+   
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/rumola.css" ],
+      "js": [ "libs/jquery-2.1.4.js", "js/google.js", "js/independent_functions.js", "js/full_process_page.js", "js/wait_box.js", "js/captchasolutions_form_ready_input.js", "js/captchasolutions_form_ready_image.js", "js/captchasolutions.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ], 
+      
+   "manifest_version": 2,
+   "minimum_chrome_version": "42.0.2311.135",
+   "name": "Chrome Auto Captcha Solver Extension",
+   "short_name": "Auto Captcha Solver",
+   "options_page": "forms/options.html",
+   "browser_action": {
+      "default_icon": "images/icons/32.png",
+      "default_popup": "forms/popup.html",
+      "default_title": "Captcha Solutions Free Captcha Solver Service"
+   },
+   "permissions": [ "contextMenus", "storage", "notifications", "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7",
+   "web_accessible_resources": [ "images/*" ]
+}

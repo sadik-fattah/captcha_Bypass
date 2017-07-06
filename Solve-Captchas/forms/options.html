@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/options.css" />
+<link href="http://www.captchas.xyz/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../libs/jquery-ui-1.11.4.css" />
+<title>Solve Captchas</title>
+<style>
+.settings-container {
+    border: thin solid black;
+    -webkit-border-radius: 5px;
+    margin: 25px;
+    padding: 7px;
+    width: 45%;
+    min-width: 300px;
+}
+
+.settings-container > span {
+    display: -webkit-box;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: -22px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<a href="http://www.solvecaptchas.com/" target="_blank"><img src="solvecaptchas.png" alt="Solve Captchas" border="0"></a>
+		</div>
+		<div class="alert alert-info">
+			<strong>Note!</strong> If you don't have Solve Captchas API Key you can register <a href="http://www.solvecaptchas.com/members/signup.php" target="_blank">on this page</a>.
+		</div>
+		<div class="alert alert-warning">
+			<strong>ALERT!</strong> Make sure you have added your I.P. address in your <a href="http://www.solvecaptchas.com/members/ip.php" target="_blank">Solve Captchas Control Panel</a>.
+		</div>		
+		<div class="row">
+			<div class="col-md-5">
+				<input id="api-key" type="text" class="form-control" placeholder="API KEY" />
+			</div>
+			<div class="col-md-3">
+				<button type="button" id="save-btn" class="btn btn-success btn-sm">
+					<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> SAVE API KEY
+				</button>
+			</div>
+		</div>	
+		<br>
+		<div class="alert alert-info">
+			<p>
+				The best way to solve captchas online...<br>
+			   Supports <a href="https://www.solvecaptchas.com/supported.php" title="Supported Captcha Types"><b>3,185 captcha types</b></a> via RESTFul API.<br>			
+			   Why not give our service a <a href="https://www.solvecaptchas.com/members/signup.php?ref=https://www.solvecaptchas.com/payments.php?plan=Basic"><b>try for 1 day</b></a>, FREE of charge!
+			</p>
+		</div>			
+	</div>
+	<script src="../libs/jquery-2.1.4.js"></script>
+	<script src="../libs/jquery-ui-1.11.4.js"></script>
+	<script src="../js/options.js"></script>
+</body>
+</html>
